@@ -5,6 +5,10 @@
     <title>Calculator</title>
     <meta charset="utf-8">
     <script type="text/javascript">
+        function inverse() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, -1);
+        }
         function x2() {
             var num = document.getElementById("n1");
             num.value = Math.pow(num.value, 2);
@@ -28,6 +32,7 @@
     Number:
     <input type="text" id="n1">
     <p>
+        <button onclick="inverse()"> 1/x </button>
         <button onclick="x2()"> x^2 </button>
         <button onclick="cube()"> x^3 </button>
         <button onclick="sin()"> sin(x) </button>
